@@ -26,9 +26,11 @@ nav .nav__title {
 }
 nav .nav_buttons {
   display: flex;
-  list-style: none;
   justify-content: space-between;
   margin-right: 20px;
+}
+nav .nav_buttons li {
+  list-style: none;
 }
 nav .nav_buttons .nav__btn {
   margin: 4px 16px;
@@ -57,7 +59,7 @@ nav .nav_buttons .nav__btn .material-symbols-outlined {
   line-height: 7.8rem;
 }
 .impact-section .impact-section__about-description .impact-section__description {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 400;
   line-height: 3.5rem;
   margin: 26px 0;
@@ -73,41 +75,58 @@ nav .nav_buttons .nav__btn .material-symbols-outlined {
   font-weight: 700;
   line-height: 2.9rem;
   color: #ffefe7;
-  text-decoration: none;
   text-align: center;
   padding-top: 8px;
+  text-decoration: none;
+}
+.impact-section .impact-section__about-description .impact-section-btn li {
+  list-style: none;
 }
 .impact-section .impact-section__img {
   width: 50%;
   height: 550px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .impact-section .impact-section__img img {
   width: 450px;
+  min-width: 280px;
   height: 100%;
   border-radius: 12px;
   margin-left: 100px;
 }
 
+.category-products {
+  margin: 80px 0;
+}
 .category-products .category-product__title {
   font-size: 4rem;
   color: #7c6a0a;
   font-weight: 400;
+  margin-left: 32px;
+  margin-bottom: 40px;
 }
 .category-products .cards-products {
   width: 100%;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  row-gap: 80px;
 }
 .category-products .cards-products .card-product {
   width: 280px;
   min-width: 250px;
-  height: 380px;
+  height: auto;
   margin: 12px 20px;
   position: relative;
   text-align: center;
   border-radius: 6px;
+  padding-bottom: 28px;
 }
 .category-products .cards-products .card-product button {
   position: absolute;
@@ -115,6 +134,7 @@ nav .nav_buttons .nav__btn .material-symbols-outlined {
   border: none;
   right: 12px;
   top: 8px;
+  cursor: pointer;
 }
 .category-products .cards-products .card-product .card-product__image-product {
   width: 200px;
@@ -127,8 +147,12 @@ nav .nav_buttons .nav__btn .material-symbols-outlined {
 .category-products .cards-products .card-product .card-product__info {
   width: auto;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 28px;
   padding-right: 28px;
+  text-align: start;
 }
 .category-products .cards-products .card-product .card-product__info .card-product__title {
   font-size: 2.1rem;
@@ -136,7 +160,7 @@ nav .nav_buttons .nav__btn .material-symbols-outlined {
   line-height: 3rem;
 }
 .category-products .cards-products .card-product .card-product__info .card-product__description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.9rem;
 }
@@ -146,6 +170,13 @@ nav .nav_buttons .nav__btn .material-symbols-outlined {
 }
 .category-products .cards-products .product-health .material-symbols-outlined {
   color: #7c6a0a;
+}
+.category-products .cards-products .product-furniture {
+  color: #ffefe7;
+  background-color: #babd8d;
+}
+.category-products .cards-products .product-furniture .material-symbols-outlined {
+  color: #ffefe7;
 }
 
 footer {

@@ -4,6 +4,19 @@ $teartiary-color: #babd8d;
 $primary-text-color: #7c6a0a;
 $font-stack: "IBM Plex Sans", sans-serif;
 
+@mixin flexCenter($direction, $content, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $content;
+	align-items: $align;
+}
+
+@mixin buttonStyle {
+	li {
+		list-style: none;
+	}
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -31,9 +44,9 @@ nav {
 	}
 
 	.nav_buttons {
-		// border: 1px solid;
+		@include buttonStyle;
 		display: flex;
-		list-style: none;
+
 		justify-content: space-between;
 		margin-right: 20px;
 
@@ -68,13 +81,14 @@ nav {
 			line-height: 7.8rem;
 		}
 		.impact-section__description {
-			font-size: 2.5rem;
+			font-size: 2.3rem;
 			font-weight: 400;
 			line-height: 3.5rem;
 			margin: 26px 0;
 			text-align: justify;
 		}
 		.impact-section-btn {
+			@include buttonStyle;
 			display: inline-block;
 			width: 240px;
 			height: 50px;
@@ -84,19 +98,19 @@ nav {
 			font-weight: 700;
 			line-height: 2.9rem;
 			color: $primary-color;
-			text-decoration: none;
 			text-align: center;
 			padding-top: 8px;
+			text-decoration: none;
 		}
 	}
 	.impact-section__img {
 		// border: 1px solid;
 		width: 50%;
 		height: 550px;
-		display: flex;
-		justify-content: center;
+		@include flexCenter(row, center, center);
 		img {
 			width: 450px;
+			min-width: 280px;
 			height: 100%;
 			border-radius: 12px;
 			margin-left: 100px;
@@ -105,25 +119,35 @@ nav {
 }
 
 .category-products {
+	margin: 80px 0;
+
 	.category-product__title {
 		font-size: 4rem;
 		color: $primary-text-color;
 		font-weight: 400;
+		margin-left: 32px;
+		margin-bottom: 40px;
 	}
 
 	.cards-products {
 		width: 100%;
 		display: flex;
-		gap: 30px;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: 80px;
+		row-gap: 80px;
+
 		.card-product {
 			// border: 1px solid;
 			width: 280px;
 			min-width: 250px;
-			height: 380px;
+			height: auto;
 			margin: 12px 20px;
 			position: relative;
 			text-align: center;
 			border-radius: 6px;
+			padding-bottom: 28px;
 
 			button {
 				position: absolute;
@@ -131,6 +155,7 @@ nav {
 				border: none;
 				right: 12px;
 				top: 8px;
+				cursor: pointer;
 			}
 
 			.card-product__image-product {
@@ -143,8 +168,12 @@ nav {
 			.card-product__info {
 				width: auto;
 				height: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 				padding-left: 28px;
 				padding-right: 28px;
+				text-align: start;
 
 				.card-product__title {
 					font-size: 2.1rem;
@@ -153,7 +182,7 @@ nav {
 				}
 
 				.card-product__description {
-					font-size: 1.5rem;
+					font-size: 1.4rem;
 					font-weight: 400;
 					line-height: 1.9rem;
 				}
@@ -164,6 +193,13 @@ nav {
 			background-color: #ffdac6;
 			.material-symbols-outlined {
 				color: #7c6a0a;
+			}
+		}
+		.product-furniture {
+			color: $primary-color;
+			background-color: #babd8d;
+			.material-symbols-outlined {
+				color: $primary-color;
 			}
 		}
 	}
