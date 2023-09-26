@@ -14,25 +14,33 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 		/>
-		<title>Document</title>
+		<link
+			rel="shortcut icon"
+			href="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png"
+			type="image/x-icon"
+		/>
+
+		<title>Eco-Store</title>
 	</head>
 	<body>
 		<nav>
 			<p class="nav__title">Eco-Store</p>
-			<button class="nav__btn">
-				<span class="material-symbols-outlined"> account_circle </span>
-			</button>
-			<button class="nav__btn">
-				<span class="material-symbols-outlined"> favorite </span>
-			</button>
-			<button class="nav__btn">
-				<span class="material-symbols-outlined"> shopping_cart </span>
-			</button>
+			<ul class="nav_buttons">
+				<li class="nav__btn">
+					<span class="material-symbols-outlined"> account_circle </span>
+				</li>
+				<li class="nav__btn">
+					<span class="material-symbols-outlined"> favorite </span>
+				</li>
+				<li class="nav__btn">
+					<span class="material-symbols-outlined"> shopping_cart </span>
+				</li>
+			</ul>
 		</nav>
 
 		<main>
 			<article class="impact-section">
-				<div class="impact-section__description">
+				<div class="impact-section__about-description">
 					<h1 class="impact-section__title">Impacto Ecológico</h1>
 					<p class="impact-section__description">
 						Debido al impacto ambiental siendo las acciones humanas las que
@@ -40,26 +48,67 @@
 						productos de manera artesanal y con materiales que favorecen al
 						cuidado del medio ambiente.
 					</p>
-					<button class="impact-section-btn">Conoce más</button>
+					<a class="impact-section-btn" href="#">Conoce más</a>
 				</div>
-				<div class="impact-section__img"></div>
+				<div class="impact-section__img">
+					<img
+						src="https://images.pexels.com/photos/4210317/pexels-photo-4210317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt=""
+					/>
+				</div>
 			</article>
 			<section class="products-sections">
-				<section class="category-product">
+				<section class="category-products">
 					<h2 class="category-product__title">Cuidado de la Salud</h2>
-					<div class="card-product">
-						<button>
-							<span class="material-symbols-outlined"> favorite </span>
-						</button>
-						<img
-							class="card-product__image-product"
-							src="/favorite.png"
-							alt="imagen del producto"
-						/>
-						<h3 class="card-product__title">Cepillo de bambú</h3>
-						<p class="card-product__description">
-							Paquete de 2 unidades hecho 100% de materiales ecológicos.
-						</p>
+					<div class="cards-products">
+						<div class="card-product product-health">
+							<button>
+								<span class="material-symbols-outlined"> favorite </span>
+							</button>
+							<img
+								class="card-product__image-product"
+								src="https://images.pexels.com/photos/7262938/pexels-photo-7262938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="imagen del producto"
+							/>
+							<div class="card-product__info">
+								<h3 class="card-product__title">Cepillo de bambú</h3>
+								<p class="card-product__description">
+									Paquete de 2 unidades hecho 100% de materiales ecológicos.
+								</p>
+							</div>
+						</div>
+						<div class="card-product">
+							<button>
+								<span class="material-symbols-outlined"> favorite </span>
+							</button>
+							<img
+								class="card-product__image-product"
+								src="https://images.pexels.com/photos/7262938/pexels-photo-7262938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="imagen del producto"
+							/>
+							<div class="card-product__info">
+								<h3 class="card-product__title">Cepillo de bambú</h3>
+								<p class="card-product__description">
+									Paquete de 2 unidades hecho 100% de materiales ecológicos.
+								</p>
+							</div>
+						</div>
+						<div class="card-product">
+							<button>
+								<span class="material-symbols-outlined"> favorite </span>
+							</button>
+							<img
+								class="card-product__image-product"
+								src="https://images.pexels.com/photos/7262938/pexels-photo-7262938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="imagen del producto"
+							/>
+							<div class="card-product__info">
+								<h3 class="card-product__title">Cepillo de bambú</h3>
+								<p class="card-product__description">
+									Paquete de 2 unidades hecho 100% de materiales ecológicos.
+								</p>
+							</div>
+						</div>
 					</div>
 				</section>
 			</section>
