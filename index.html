@@ -26,14 +26,17 @@
 		<nav>
 			<p class="nav__title">Eco-Store</p>
 			<ul class="nav_buttons">
-				<li class="nav__btn">
+				<li class="nav__btn btn-desktop">
 					<span class="material-symbols-outlined"> account_circle </span>
 				</li>
-				<li class="nav__btn">
+				<li class="nav__btn btn-desktop">
 					<span class="material-symbols-outlined"> favorite </span>
 				</li>
-				<li class="nav__btn">
+				<li class="nav__btn btn-desktop">
 					<span class="material-symbols-outlined"> shopping_cart </span>
+				</li>
+				<li class="nav__btn btn-mobile">
+					<span class="material-symbols-outlined"> menu </span>
 				</li>
 			</ul>
 		</nav>
@@ -159,6 +162,7 @@
 						</div>
 					</div>
 				</section>
+
 				<section class="category-products">
 					<h2 class="category-product__title">Cuidado de la Salud</h2>
 					<div class="cards-products">
@@ -261,59 +265,61 @@
 					</div>
 				</section>
 			</section>
-			<section class="info-section">
+			<section class="info-sections">
 				<article class="about-us">
 					<h2 class="about-us__title">¿Por qué nosotros?</h2>
-					<figure>
-						<img
-							class="figure__img"
-							src="/assets/images/earth-logo.svg"
-							alt="earth happy"
-						/>
-						<figcaption class="figure__description">
-							Compromiso con el medio ambiente garantizando el uso de materiales
-							100% reciclables.
-						</figcaption>
-					</figure>
-					<figure>
-						<img
-							class="figure__img"
-							src="/assets/images/eco-logo.svg"
-							alt="earth happy"
-						/>
-						<figcaption class="figure__description">
-							Innovando con estilo el diseño de nuestros muebles es único.
-						</figcaption>
-					</figure>
+					<div class="about-us__figures">
+						<figure>
+							<img
+								class="figure__img"
+								src="/assets/images/earth-logo.svg"
+								alt="earth happy"
+							/>
+							<figcaption class="figure__description">
+								Compromiso con el medio ambiente garantizando el uso de
+								materiales 100% reciclables.
+							</figcaption>
+						</figure>
+						<figure>
+							<img
+								class="figure__img"
+								src="/assets/images/eco-logo.svg"
+								alt="earth happy"
+							/>
+							<figcaption class="figure__description">
+								Innovando con estilo el diseño de nuestros muebles es único.
+							</figcaption>
+						</figure>
+					</div>
 				</article>
 				<article class="our-gallery">
 					<h2 class="our-gallery__title">Galeria de estilos</h2>
 					<div class="our-gallery__images">
 						<img
 							class="images-gallery"
-							src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+							src="https://images.pexels.com/photos/4913317/pexels-photo-4913317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 							alt="product"
 						/>
 						<img
 							class="images-gallery"
-							src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+							src="https://images.pexels.com/photos/4119832/pexels-photo-4119832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 							alt="product"
 						/>
 						<img
 							class="images-gallery"
-							src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+							src="https://images.pexels.com/photos/7601116/pexels-photo-7601116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 							alt="product"
 						/>
 					</div>
 				</article>
 				<article class="find-me">
 					<h2 class="find-me__title">Encuéntranos en</h2>
-					<div class="find-me__map"></div>
+					<div class="find-me__map">
+						<img src="/assets/images/map.svg" alt="picture of map" />
+					</div>
 					<div class="find-me__address">
-						<p class="full-address">
-							Centro Mayor Centro Comercial Cl. 38A Sur #34d-51, Bogotá,
-							Colombia
-						</p>
+						<p>Centro Mayor Centro Comercial</p>
+						<span>Cl. 38A Sur #34d-51, Bogotá, Colombia</span>
 					</div>
 				</article>
 			</section>
@@ -321,12 +327,38 @@
 		<footer>
 			<h3>Eco-Store</h3>
 			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>Carrers</li>
+				<li>Carrers</li>
+				<li>Carrers</li>
+				<li>Carrers</li>
 			</ul>
-			<div></div>
+
+			<ul class="footer-icons">
+				<li>
+					<img
+						width="25"
+						height="25"
+						src="https://img.icons8.com/ios/50/FFFFFF/instagram-new--v1.png"
+						alt="instagram-new--v1"
+					/>
+				</li>
+				<li>
+					<img
+						width="25"
+						height="25"
+						src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook.png"
+						alt="facebook"
+					/>
+				</li>
+				<li>
+					<img
+						width="25"
+						height="25"
+						src="https://img.icons8.com/ios-filled/50/FFFFFF/twitterx--v1.png"
+						alt="twitterx--v1"
+					/>
+				</li>
+			</ul>
 		</footer>
 	</body>
 </html>
